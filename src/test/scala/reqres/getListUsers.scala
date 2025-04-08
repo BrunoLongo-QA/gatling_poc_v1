@@ -1,40 +1,29 @@
 package reqres
 
-import utils.Constants
+import utils.ConstantsReqRes
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
-import scala.collection.JavaConverters.mapAsScalaMapConverter
 
 class getListUsers extends Simulation {
 
-	val httpProtocol = http
-		.baseUrl(Constants.REQRES_BASE_URL)
-		.inferHtmlResources()
-		.contentTypeHeader("application/json")
-		.userAgentHeader("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36")
-
-	val headers: Map[String, String] = Constants.REQRES_HEADERS.asScala.toMap
-	val endPoints: Map[String, String] = Constants.REQRES_ENDPOINTS.asScala.toMap
+	val userName: String = ConstantsReqRes.USERS_VALIDATION("userName");
+	val userEndPoint: String = ConstantsReqRes.REQRES_ENDPOINTS("users");
+	val headers = ConstantsReqRes.REQRES_HEADERS;
 
 	val scn = scenario("USERS_VALIDATION")
 		.exec(http("Get List Users for page 2")
-			.get(endPoints("users") + "?page=2")
+			.get(userEndPoint + "?page=2")
 			.headers(headers)
 			.check(status.is(200)))
 		.pause(1)
-		.exec(http("Get User 2")
-			.get(endPoints("users") + "/2")
+		.exec(http("Get User Singlegit")
+			.get(userEndPoint+ "/2")
 			.headers(headers)
-			.check(status.is(200)))
+			.check(status.is(200),substring(userName).exists))
 		.pause(1)
-		.exec(http("Get User 23")
-			.get(endPoints("users") + "/23")
+		.exec(http("Get User 23 - Not Found")
+			.get(userEndPoint + "/23")
 			.headers(headers)
 			.check(status.is(404)))
-		.pause(1)
-		.exec(http("Request Unknown")
-			.get(endPoints("unknown"))
-			.headers(headers))
-
-	setUp(scn.inject(atOnceUsers(1))).protocols(httpProtocol)
+	setUp(scn.inject(atOnceUsers(1))).protocols(ConstantsReqRes.HTTP_PROTOCOLS)
 }

@@ -1,0 +1,10 @@
+{
+  "simulation": "reqres.getListUsers",
+  "simulationId": "getlistusers",
+  "start": 1744088806210,
+  "description": "First Test",
+  "scenarios": ["USERS_VALIDATION"],
+  "assertions": [
+
+  ]
+}

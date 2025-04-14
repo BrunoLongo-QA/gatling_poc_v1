@@ -2,15 +2,16 @@ package reqres
 
 import utils.ConstantsReqRes
 import io.gatling.core.Predef._
+import io.gatling.core.structure.ScenarioBuilder
 import io.gatling.http.Predef._
 
 class getResource extends Simulation {
 
-  val resourceName: String = ConstantsReqRes.USERS_VALIDATION("unknown");
-  val resourceEndPoint: String = ConstantsReqRes.REQRES_ENDPOINTS("unknown");
-  val headers = ConstantsReqRes.REQRES_HEADERS;
+  val resourceName: String = ConstantsReqRes.USERS_VALIDATION("unknown")
+  val resourceEndPoint: String = ConstantsReqRes.REQRES_ENDPOINTS("unknown")
+  val headers: Map[String, String] = ConstantsReqRes.REQRES_HEADERS
 
-  val scn = scenario("USERS_VALIDATION")
+  val scn: ScenarioBuilder = scenario("USERS_VALIDATION")
     .exec(http("Request Resource List")
       .get(resourceEndPoint)
       .headers(headers)

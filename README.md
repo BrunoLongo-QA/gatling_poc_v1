@@ -1,5 +1,7 @@
 # Gatling Proof of Concept
 
+![Project Version](https://img.shields.io/badge/Project%20Version-1.0.0-138c18?labelColor=gray&style=for-the-badge)
+
 The idea of this project is to create a proof of concept for a Gatling simulation that can be used to test the performance of a web application. 
 The simulation will be run using the Gatling tool, which is a powerful load testing tool for web applications.
 
@@ -15,7 +17,7 @@ The simulation will be run using the Gatling tool, which is a powerful load test
 
 </div>
 
-### Getting Started
+### 😁 "Gatling" Started 😁
 
 First, you need to install [SDKMAN](https://sdkman.io/) to manage your Java and Scala versions. After that, you can install the required versions of Java and Scala using the following commands:
 
@@ -32,7 +34,7 @@ mvn archetype:generate
 ```
 After that you need to type Gatling in the terminal and follow the instructions to install the Gatling version 3.3.1.
 
-### Running the Simulation
+### 🎽 Running the Simulation 🎽
 First you need to fork the repository and clone it to your local machine. You can do this by clicking the "Fork" button in the top right corner of the page. 
 
 This will create a copy of the repository in your own GitHub account.
@@ -53,5 +55,5 @@ This will run the simulation and generate a report in the `target/gatling` direc
 
 This run all the scenarios in the `src/test/scala` directory.
 
-## Contributors
+## 🖊️ Contributors 🖊️
 [![GitHub](https://img.shields.io/badge/GitHub-Bruno%20Longo%20QA-008000?labelColor=gray&style=for-the-badge&link=https://github.com/BrunoLongo-QA)](https://github.com/BrunoLongo-QA)

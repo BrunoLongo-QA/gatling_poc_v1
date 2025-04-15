@@ -55,5 +55,10 @@ This will run the simulation and generate a report in the `target/gatling` direc
 
 This run all the scenarios in the `src/test/scala` directory.
 
+### 📊 Project Versions 📊
+
+* 1.0.1 - Adjust to upscale the tests on the User List so instead of 2 request (list and single) we start with 10 requests at the same time, them 25, them 50, them 100 and finally 200. ⚙️ **IN PROGRESS**
+* 1.0.0 - Initial version of the project with the first simulation. ✅ **CURRENT VERSION**
+
 ## 🖊️ Contributors 🖊️
 [![GitHub](https://img.shields.io/badge/GitHub-Bruno%20Longo%20QA-008000?labelColor=gray&style=for-the-badge&link=https://github.com/BrunoLongo-QA)](https://github.com/BrunoLongo-QA)

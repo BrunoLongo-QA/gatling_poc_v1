@@ -7,10 +7,10 @@ The simulation will be run using the Gatling tool, which is a powerful load test
 
 [![LICENSE](https://img.shields.io/badge/License-MIT-blue)](LICENSE.md)
 
-[![Maven](https://img.shields.io/badge/Maven-3.9.9-blue)](https://maven.apache.org/)
-[![Gatling](https://img.shields.io/badge/Gatling-3.9.9-orange)](https://gatling.io/) 
-[![Scala](https://img.shields.io/badge/Scala-2.12.10-red)](https://www.scala-lang.org/)
-[![Java](https://img.shields.io/badge/Java-17.0.14-blue)](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
+[![Maven](https://img.shields.io/badge/Maven-3.9.9-FF0000)](https://maven.apache.org/)
+[![Gatling](https://img.shields.io/badge/Gatling-3.3.1-fd6b00)](https://gatling.io/) 
+[![Scala](https://img.shields.io/badge/Scala-2.12.10-f5537f)](https://www.scala-lang.org/)
+[![Java](https://img.shields.io/badge/Java-17.0.14-21b008)](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 [![SDKMAN](https://img.shields.io/badge/SDKMAN-5.0.0-yellow)](https://sdkman.io/)
 
 </div>

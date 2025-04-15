@@ -6,7 +6,6 @@ import io.gatling.http.Predef._
 
 class getResource extends Simulation {
 
-  val resourceName: String = ConstantsReqRes.USERS_VALIDATION("unknown");
   val resourceEndPoint: String = ConstantsReqRes.REQRES_ENDPOINTS("unknown");
   val headers = ConstantsReqRes.REQRES_HEADERS;
 

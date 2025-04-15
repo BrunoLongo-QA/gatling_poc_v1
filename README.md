@@ -3,6 +3,8 @@
 The idea of this project is to create a proof of concept for a Gatling simulation that can be used to test the performance of a web application. 
 The simulation will be run using the Gatling tool, which is a powerful load testing tool for web applications.
 
+<div style="text-align: center;">
+
 [![LICENSE](https://img.shields.io/badge/License-MIT-blue)](LICENSE.md)
 
 [![Maven](https://img.shields.io/badge/Maven-3.9.9-blue)](https://maven.apache.org/)
@@ -10,6 +12,8 @@ The simulation will be run using the Gatling tool, which is a powerful load test
 [![Scala](https://img.shields.io/badge/Scala-2.12.10-red)](https://www.scala-lang.org/)
 [![Java](https://img.shields.io/badge/Java-17.0.14-blue)](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 [![SDKMAN](https://img.shields.io/badge/SDKMAN-5.0.0-yellow)](https://sdkman.io/)
+
+</div>
 
 ### Getting Started
 

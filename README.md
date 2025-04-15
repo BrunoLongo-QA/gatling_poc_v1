@@ -3,7 +3,7 @@
 The idea of this project is to create a proof of concept for a Gatling simulation that can be used to test the performance of a web application. 
 The simulation will be run using the Gatling tool, which is a powerful load testing tool for web applications.
 
-[![LICENSE](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
+[![LICENSE](https://img.shields.io/badge/License-MIT-blue)](LICENSE.md)
 
 [![Maven](https://img.shields.io/badge/Maven-3.9.9-blue)](https://maven.apache.org/)
 [![Gatling](https://img.shields.io/badge/Gatling-3.9.9-orange)](https://gatling.io/) 
